@@ -1,7 +1,7 @@
-import React from 'react'
 import DashboardUI from '@/components/DashboardUI'
+import React from 'react'
 
-export default function index() {
+export default function Dashboard() {
   return (
     <div>
       <DashboardUI/>
