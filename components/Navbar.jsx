@@ -11,8 +11,8 @@ const Navbar = () => {
         >
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="text-xl font-bold text-slate-900">
-                UNCHK Lab
+              <span className="text-3xl font-bold text-slate-900">
+                UNCHK’<span className="text-blue-600">Lab</span>
               </span>
             </Link>
           </div>

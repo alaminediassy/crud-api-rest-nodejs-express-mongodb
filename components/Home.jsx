@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Bienvenue sur UNCHK Student Lab
+              Bienvenue sur UNCHK Student <span className="text-blue-600">Lab</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               L’application centrale de gestion des étudiants de <br /> <span className="text-sm uppercase text-blue-600 font-semibold">l’Université Numérique Chekh Hamidou KANE</span>
