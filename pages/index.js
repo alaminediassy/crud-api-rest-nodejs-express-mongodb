@@ -1,10 +1,10 @@
 import React from 'react'
-import DashboardUI from '@/components/DashboardUI'
+import Home from '@/components/Home'
 
 export default function index() {
   return (
     <div>
-      <DashboardUI/>
+      <Home/>
     </div>
   )
 }

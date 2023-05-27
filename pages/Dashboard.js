@@ -1,4 +1,4 @@
-import DashboardUI from '@/components/DashboardUI'
+import DashboardUI from '@/components/dashboard/DashboardUI'
 import React from 'react'
 
 export default function Dashboard() {

@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from '../Navbar'
 import { Sidebar } from '../Sidebar'
 import Formcontent from './FormContent'
+import NavbarDashboard from '../NavbarDashboard'
 
 export const AddStudentForm = () => {
   return (
     <div>
-       <Navbar/>
+       <NavbarDashboard/>
        <Sidebar/>
        <Formcontent/>
     </div>
