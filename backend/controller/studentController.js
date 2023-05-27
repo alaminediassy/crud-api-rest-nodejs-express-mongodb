@@ -49,10 +49,10 @@ exports.updateStudent = async (req, res) => {
         if (!student) {
             return res.status(404).json({
                 success: false,
-                error: "Student not found"
+                error: "Cet étudiant n'existe pas"
             });
         }res.status(200).json({
-            success: true,
+            success: "Mise à jour des informations de l'étudiant faite avec succès",
             data: student
         });
     }catch (error) {
@@ -67,11 +67,11 @@ exports.deteteStudent = async (req, res) => {
         if (!student) {
             return res.status(404).json({
                 success: false,
-                error: "Student not found"
+                error: "Cet étudiant n'existe pas"
             });
         }
         res.status(200).json({
-            success: true,
+            success: "L'étudiant a été supprimer avec succès",
             data: {}
         });
         }catch (error) {

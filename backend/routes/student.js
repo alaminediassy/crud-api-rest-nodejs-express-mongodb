@@ -12,9 +12,9 @@ router.get("/:id", studentController.getStudentById);
 router.post("/", studentController.createStudent);
 
 // Update student
-router.put("/:id", studentController.updateStudent);
+router.put("/update-student/:id", studentController.updateStudent);
 
 // Delete student
-router.delete("/:id", studentController.deteteStudent);
+router.delete("/delete-student/:id", studentController.deteteStudent);
 
 module.exports = router;

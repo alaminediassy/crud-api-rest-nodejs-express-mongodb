@@ -7,6 +7,6 @@ const promise = mongoose.connect(URI, {
     useUnifiedTopology: true
 });
 promise.then(() => {
-        console.log("Connected on database");
+        console.log("Database connected successfully");
 });
 mongoose.set("strictQuery", false);

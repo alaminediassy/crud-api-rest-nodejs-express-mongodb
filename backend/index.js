@@ -6,13 +6,16 @@ require("./config/db");
 const default_route = require("./routes/default_route");
 const connectDB = require('./config/db');
 const errorHandler = require("./middleware/errorHandler");
-const cors = require('cors')
+const cors = require('cors');
+const {log} = require("mercedlogger");
+const morgan = require("morgan");
+const PORT = process.env.PORT || 3000;
 
 
 // Middleware global pour parser les données JSON envoyées dans les requêtes HTTP
 app.use(express.json());
-
 app.use(cors());
+app.use(morgan("tiny"))
 
 // Midleware global pour gérer les erreurs
 //app.use(errorHandler);
@@ -29,6 +32,9 @@ app.use("/", default_route);
 app.use(require('./routes/student'));
 
 
-app.listen("3000", () => {
-    console.log(`Server listenning on port: http://localhost:${3000}`)
+// user route
+app.use(require('./routes/user'));
+
+app.listen(PORT, () => {
+    console.log(`Server listenning on port: http://localhost:${PORT}`)
 });
